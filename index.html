@@ -51,28 +51,34 @@
       <div class="big-card">
         <div class="card">
           <div class="title">
-            Add an Annotation for the Weight Observation
-          </div>
-        <span>  <input class="annotation-box" id="annotation">
-          <button class="annotation-button" id="add">Add</button></span>
-          <div class="annotations">
-          Latest Annotation
-          <li id="note">No annotations</li>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="title">
             Medication Requests
           </div>
           <ul id="med_list"></ul>
         </div>
+		
+		<div class="card">
+		  <div class="title">
+		    COPD Prediction
+		  </div>
+		  <div>Please select the status of the patient's tabocca use:</div>
+		  <form id="smokingStatus">
+		    <input type="radio" name="choice" value="activeSmoker"/> Active smoker <br />
+			<input type="radio" name="choice" value="exSmoker"/> Ex-smoker <br />
+			<input type="radio" name="choice" value="nonSmoker"> Non-smoker <br />
+		  </form>
+		  <button class="predict-button" id="predict">Predict</button>
+		  <div class="results">
+          Prediction Results:
+          <li id="result">No prediction</li>
+          </div>
+		  
       </div>
 
     </main>
   </div>
 
   <script src='./lib/js/fhir-client.js'></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="./lib/js/get-data.js"></script>
 
   <!-- uncomment below script and comment above script to switch for easy local testing -->
