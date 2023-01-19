@@ -3,7 +3,7 @@
 
 **Abstract**— Early diagnosis is a key challenge for the timely intervention and management of Chronic Obstructive Pulmonary Disease (COPD), a life-threatening lung disease in the US. Here in this work a highly accurate (F1 score being 0.95) classification model 
 was built using regression modeling. Based on basic information of a specific patient including gender, age, and smoking status, 
-the model predicts if the patient is likely having COPD or not. A SMART-on-FHIR app was built to demonstrate the use of this predictive model in a clinical setting. 
+the model predicts if the patient is likely having COPD or not. A SMART-on-FHIR app was built to demonstrate the use of this predictive model in a clinical setting. A demo of the app can be seen here: https://www.youtube.com/watch?v=Bsq7Hat0l4o  
 
 ## 1 PROBLEM STATEMENT
 
